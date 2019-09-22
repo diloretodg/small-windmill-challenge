@@ -1,0 +1,47 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+  }
+  #area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+  }
+  
+  #Group-5 {
+    animation: rotate 10s 0s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+  
+  #Cloud {
+    animation: translate 10s linear infinite;
+  }
+  
+  #Cloud-2 {
+    animation: translate-2 10s 5s linear infinite;
+  }
+  
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg)
+    }
+  }
+  
+  @keyframes translate {
+    to {
+      transform: translate(60px,20px)
+    }
+  }
+  
+  @keyframes translate-2 {
+    to {
+      transform: translate(60px,5px)
+    }
+  }
